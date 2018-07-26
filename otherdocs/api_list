@@ -1,0 +1,18 @@
+NodeJS API for Avtar Website
+
+/getAddressBalance
+
+/isWalidAddress
+
+/getTokenInfo
+
+/getTokenBalance
+
+/sendAsset
+
+/getNEOtoUSDPrice
+
+/createNEOAddress
+
+/sendNEO
+

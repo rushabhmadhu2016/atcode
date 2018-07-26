@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Avtar Life</title>
+        <meta name="author" content="Avtar Life" />
+        <meta name="description" content="/>
+        <meta name="keywords"  content="" />
+        <meta name="Resource-type" content="Document"/>
+        <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/css/font-awesome.css" rel="stylesheet"/>
+        <link href="assets/css/counter.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/css/jquery-ui.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/css/owl.carousel.min.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/css/style.css" type="text/css" rel="stylesheet"/>
+        <!--[if IE]>
+                <script type="text/javascript">
+                         var console = { log: function() {} };
+                </script>
+        <![endif]-->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/lodash.min.js"></script>
+        <script src="assets/js/countdown.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/canvasjs.min.js"></script>
+        <script src="assets/js/moment.js"></script>
+        <script src="assets/js/Chart.min.js"></script>
+    </head>
+    <body class="page">
+        <div id="page-content">
+            <section id="header" class="no-padd">
+                <header class="main-head">
+                    <div class="navbar-top">
+                        <div class="container">
+                            <p class="top-email"><i class="fa fa-envelope-o"></i> <a href="info@avtarlife.com" title="Email">info@avtarlife.com</a>
+                                <span class="social-media-top">
+                                    <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <nav id="menu-bar" class="navbar navbar-default navbar-static-top {{$class}}">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <!-- Collapsed Hamburger -->
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                                    <span class="sr-only">Toggle Navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <!-- Branding Image -->
+                                <a class="navbar-brand" href="/">
+                                    <img src="assets/images/Avatar_logo.png">
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                                <!-- Left Side Of Navbar -->
+                                <ul class="nav navbar-nav">
+                                </ul>
+                                <!-- Right Side Of Navbar -->
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="menu-links"><a class="" href="#">About AVR</a></li>
+                                    <li class="menu-links"><a class="" href="#">Tokens</a></li>
+                                    <li class="menu-links"><a class="" href="#">Roadmap</a></li>
+                                    <li class="menu-links"><a class="" href="#">Team</a></li>
+                                    <li class="menu-links"><a class="" href="#">FAQ</a></li>
+                                    <li class="menu-links"><a class="" href="#">Contact</a></li>
+                                    <li class="menu-links"><a class="color-blue" href="#">White Paper</a></li>
+                                    <li class="menu-links"><a class="color-blue" href="#">Summary</a></li>
+                                    <li class="menu-links menu-btn"><a class="color-blue" href="#"><button type="button" class="btn btn-default navbar-btn">Sign Up</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </section>
+            <section id="banner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+                            <div class="col-md-10 col-md-offset-1 padd-tb-20 col-sm-12 col-xs-12">
+                                <div class="newsletter">
+                                    <h2 class="color-white">Newsletter</h2>
+                                    <form id="newsletter-form" class="form-inline" method="post">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="Enter your mail ID">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" name="submit" class="form-control" value="Subscribe">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-10 col-md-offset-1 padd-tb-20 col-sm-12 col-xs-12">
+                                <div class="tab-banner">
+                                    <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+                                        <a href="#" class="tab-btn active">Announcement</a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+                                        <a href="#" class="tab-btn">Discuss</a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+                                        <a href="#" class="tab-btn">Bounty</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-10 col-md-offset-1 padd-tb-40 col-sm-12 col-xs-12">
+                                <div class="counter">
+                                    <div class="countdown-container" id="counter">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-10 col-md-offset-1 padd-tb-20 col-sm-12 col-xs-12">
+                                <div id="progressbar"></div>
+                                <div class="description">
+                                    <p class="pull-left color-white">25% Bonus <br/>20,000 Token Sold</p>
+                                    <p class="pull-right color-white"><big>PreSale</big></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="introductoin">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <h2 class="section-title color-blue">Why Invest in Avatar Life Tokens?</h2>
+                            <div class="section-content text-justify">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="icons-intro text-center">
+                                <ul class="icons">
+                                    <li>
+                                        <img src="assets/images/revolutionary_gaming.png">
+                                        <p class="icon-title color-blue">Revolutionary Gaming</p>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/Powerd by_NEO.png">
+                                        <p class="icon-title color-blue">Powered by NEO</p>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/high_returns.png">
+                                        <p class="icon-title color-blue">High Returns</p>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/1_million_customers.png">
+                                        <p class="icon-title color-blue">1 Million Customers</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="bg-grey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <h2 class="section-title color-blue">About Avatar Life</h2>
+                            <div class="section-content text-justify">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <img src="assets/images/video_img.png" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="tokens">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="section-title color-blue">Tokens</h2>
+                            <div class="section-content text-justify">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <h3 class="token-title color-blue text-center">Distribution of Tokens</h3>
+                            <div id="distribution_graph" style="min-height: 320px; width: auto;"></div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <h3 class="token-title color-blue text-center">Sale Process Allocation</h3>
+                            <div id="sale_process" style="min-height: 320px; width: auto;">
+                                <canvas id="sale_process_chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="global" class="no-padd">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                            <p class="fact-icon"><img src="assets/images/white_paper.png"></p>
+                            <p class="color-white"><big> White Paper </big></p>
+                            <p class="fact-link"><a class="color-white" href="#">Download</a></p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                            <p class="fact-icon"><img src="assets/images/white_paper.png"></p>
+                            <p class="color-white"><big> 1 Page Summary </big></p>
+                            <p class="fact-link"><a class="color-white" href="#">Download</a></p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                            <p class="fact-icon"><img src="assets/images/participents.png"></p>
+                            <p class="color-white"><big> 30,000+ ICO Participants </big></p>
+                            <p class="fact-link"><a class="color-white" href="#">Register</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="roadmap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="section-title color-blue">The Road Map</h2>
+                            <div class="section-content text-justify">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                            <div class="slider-section">
+                                <div id="slider-roadmap" class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <h4 class="color-blue text-center">January 2018</h4>
+                                        <p class="bullet"><i class="bullet-circle"></i></p>
+                                        <p class="text-left roadmap-slider-text">Partnership for the future EcoSystem.</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4 class="color-blue text-center">January 2018</h4>
+                                        <p class="bullet"><i class="bullet-circle"></i></p>
+                                        <p class="text-left roadmap-slider-text">Partnership for the future EcoSystem.</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4 class="color-blue text-center">January 2018</h4>
+                                        <p class="bullet"><i class="bullet-circle"></i></p>
+                                        <p class="text-left roadmap-slider-text">Partnership for the future EcoSystem.</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4 class="color-blue text-center">January 2018</h4>
+                                        <p class="bullet"><i class="bullet-circle"></i></p>
+                                        <p class="text-left roadmap-slider-text">Partnership for the future EcoSystem.</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4 class="color-blue text-center">January 2018</h4>
+                                        <p class="bullet"><i class="bullet-circle"></i></p>
+                                        <p class="text-left roadmap-slider-text">Partnership for the future EcoSystem.</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4 class="color-blue text-center">January 2018</h4>
+                                        <p class="bullet"><i class="bullet-circle"></i></p>
+                                        <p class="text-left roadmap-slider-text">Partnership for the future EcoSystem.</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4 class="color-blue text-center">January 2018</h4>
+                                        <p class="bullet"><i class="bullet-circle"></i></p>
+                                        <p class="text-left roadmap-slider-text">Partnership for the future EcoSystem.</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4 class="color-blue text-center">January 2018</h4>
+                                        <p class="bullet"><i class="bullet-circle"></i></p>
+                                        <p class="text-left roadmap-slider-text">Partnership for the future EcoSystem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="team-advisor" class="bg-grey">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="section-title color-blue">Our Team</h2>
+                            <div class="section-content">
+                                <div id="slider-team" class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/"  class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="section-title color-blue">Our Advisers</h2>
+                            <div class="section-content">
+                                <div id="slider-advisor" class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/"  class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                    <div class="item">
+                                        <p class="image-wrap text-center">
+                                            <img src="http://via.placeholder.com/150x150/" class="img-circle">
+                                            <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                        </p>
+                                        <h4 class="color-blue text-center">John Smith</h4>
+                                        <p class="text-muted designation text-center">Designation</p>
+                                        <p class="member-content text-center">Lorem Ipsum is simply dummy text of the printing...</p>
+                                        <p class="text-center"><a class="read-more-btn" href="#">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h2 class="section-title color-blue">Frequently Asked Questions</h2>
+                            <div class="section-content">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <ul class="nav nav-pills faq-pills">
+                                            <li class="active"><a data-toggle="tab" href="#general">General</a></li>
+                                            <li><a data-toggle="tab" href="#presale">Pre Sale</a></li>
+                                            <li><a data-toggle="tab" href="#token">Tokens</a></li>
+                                            <li><a data-toggle="tab" href="#legal">Legal</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div id="general" class="tab-pane fade in active">
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                        <div id="presale" class="tab-pane fade">
+                                          <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                        <div id="token" class="tab-pane fade">
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                        <div id="legal" class="tab-pane fade">
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                                <h4 class="color-blue">Lorem ipsum dolor sit amet?</h4>
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="newsletter" class="no-padd">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                                    <h3 class="section-title color-white">Subscribe to Newsletter</h3>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                    <div class="section-content">
+                                        <form id="newsletter-form-bottom" class="form-inline" method="post">
+                                            <div class="form-group email">
+                                                <input type="email" name="email" class="form-control">
+                                            </div>
+                                            <div class="form-group submit">
+                                                <input type="submit" name="submit" class="form-control" value="Subscribe">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="no-padd">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <h3 class="section-title contact-title">Any Questions?</h3>
+                            <p class="contact-tagline"><big>Reach out us and we will get back to you shortly</big></p>
+                            <div class="footer-contact pull-left">
+                                <p class="number"><img src="assets/images/phone.png"> <a href="tel:+919876543210"> <big>+91 9876543210</big></a></p>
+                                <p class="email"><img src="assets/images/mail.png"> <a href="mailto:info@avatarlife.com"> <big>info@avatarlife.com</big></a></p>
+                            </div>
+                            <div class="avtar-icon pull-right">
+                                <img src="assets/images/footer_logo.png">
+                            </div>
+                            <div class="col-md-12 col-xs-12">
+                                <div class="row">
+                                    <ul class="social-media-bottom">
+                                        <li><a target="_blank" href="https://www.facebook.com/" class="facebook"></a></li>
+                                        <li><a target="_blank" href="https://www.twitter.com/" class="twitter"></a></li>
+                                        <li><a target="_blank" href="https://www.telegram.com/" class="paper-plane"></a></li>
+                                        <li><a target="_blank" href="https://www.github.com/" class="github"></a></li>
+                                        <li><a target="_blank" href="https://www.instagram.com/" class="instagram"></a></li>
+                                        <li><a target="_blank" href="https://www.reddit.com/" class="reddit"></a></li>
+                                        <li><a target="_blank" href="https://www.medium.com/" class="medium"></a></li>
+                                        <li><a target="_blank" href="https://www.linkedin.com/" class="linkedin"></a></li>
+                                        <li><a target="_blank" href="https://www.youtube.com/" class="youtube"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <h2 class="section-title contact-title color-blue">Get In Touch</h2>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <form id="contact-form" class="form-horizontal" method="post">
+                                    <div class="form-group">
+                                        <input type="text" name="name" placeholder="Your Name*" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Your Email*" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" placeholder="Your Message"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="submit" class="form-control" value="Submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="footer" class="no-padd">
+                <footer class="site-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12 copyright">
+                                &copy; <script type="text/javascript">var dteNow = new Date(); var intYear = dteNow.getFullYear(); document.write(intYear);</script> AVTAR LIFE All rights reserved
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <ul class="footer-menu">
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </div>
+                            <div id="telegram-icon">
+                                <img src="assets/images/telegram_icon.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </div>
+<script type="text/template" id="counter-template">
+    <div class="time <%= label %>">
+        <span class="count curr top"><%= curr %></span>
+        <span class="count next top"><%= next %></span>
+        <span class="count next bottom"><%= next %></span>
+        <span class="count curr bottom"><%= curr %></span>
+        <span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>
+    </div>
+</script>
+<script type="text/javascript">
+  $(window).on('load', function() {
+
+/* --------------- DISTRIBUTION GRAPH --------------- */
+    var chart = new CanvasJS.Chart("distribution_graph", {
+        animationEnabled: true,
+        data: [{
+            type: "doughnut",
+            startAngle: 50,
+            innerRadius: 85,
+            indexLabelFontSize: 17,
+            indexLabel: " #percent% {label}",
+            toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+            dataPoints: [
+                { y: 5, label: "Bounties", color:'#0e61ad' },
+                { y: 25, label: "Partners and Advisors", color:'#ed2c4a'},
+                { y: 20, label: "Bonus Fund", color:'#1382ff'},
+                { y: 10, label: "Token Presale", color:'#75deee' },
+                { y: 40, label: "Core Phases of Token Sale", color:'#242466' },
+            ]
+        }]
+    });
+    chart.render();
+/* --------------- DISTRIBUTION GRAPH END --------------- */
+
+
+/* --------------- SALES PROCESS --------------- */
+var data = {
+    datasets: [{
+        data: [ 100, 90, 80, 70, 60, 50 ],
+        backgroundColor: ["#7ab5eb","#444347","#91eb7c","#f7a15b","#7e85e9","#ed5d87"],
+    }],
+    value:[40,20,18,10,8,4],
+    labels: [
+        "40% Branding and Marketing ",
+        "20% Gift Code Inventory",
+        "18% Legal & Financial Over head",
+        "10% IT Infrastructure",
+        "8% Bounty & Overhead",
+        "4% Management"
+    ],
+    // maintainAspectRatio: false
+};
+var ctx = $("#sale_process_chart");
+new Chart(ctx, {
+    data: data,
+    type: 'polarArea',
+    options:{
+        legend:{
+            position:'right',
+            labels: {
+                boxWidth:8,
+                // fontSize:17,
+                // usePointStyle:true
+            },
+            // display:false,
+        },
+        scale: {
+            display: false
+        }
+    },
+});
+/* --------------- SALES PROCESS END --------------- */
+
+
+
+/* --------------- PROGRESSBAR --------------- */
+    $( "#progressbar" ).progressbar({
+      value: 25
+    });
+/* --------------- PROGRESSBAR END --------------- */
+
+/* --------------- COUNTER BANNER PART --------------- */
+    var labels = ['weeks', 'days', 'hours', 'minutes', 'seconds'],
+      nextYear = '2018/07/01',
+      template = _.template($('#counter-template').html()),
+      currDate = '00:00:00:00:00',
+      nextDate = '00:00:00:00:00',
+      parser = /([0-9]{2})/gi,
+      $example = $('#counter');
+    // Parse countdown string to an object
+    function strfobj(str) {
+      var parsed = str.match(parser),
+        obj = {};
+      labels.forEach(function(label, i) {
+        obj[label] = parsed[i]
+      });
+      return obj;
+    }
+    // Return the time components that diffs
+    function diff(obj1, obj2) {
+      var diff = [];
+      labels.forEach(function(key) {
+        if (obj1[key] !== obj2[key]) {
+          diff.push(key);
+        }
+      });
+      return diff;
+    }
+    // Build the layout
+    var initData = strfobj(currDate);
+    labels.forEach(function(label, i) {
+      $example.append(template({
+        curr: initData[label],
+        next: initData[label],
+        label: label
+      }));
+    });
+    // Starts the countdown
+    $example.countdown(nextYear, function(event) {
+      var newDate = event.strftime('%w:%d:%H:%M:%S'),
+        data;
+      if (newDate !== nextDate) {
+        currDate = nextDate;
+        nextDate = newDate;
+        // Setup the data
+        data = {
+          'curr': strfobj(currDate),
+          'next': strfobj(nextDate)
+        };
+        // Apply the new values to each node that changed
+        diff(data.curr, data.next).forEach(function(label) {
+          var selector = '.%s'.replace(/%s/, label),
+              $node = $example.find(selector);
+          // Update the node
+          $node.removeClass('flip');
+          $node.find('.curr').text(data.curr[label]);
+          $node.find('.next').text(data.next[label]);
+          // Wait for a repaint to then flip
+          _.delay(function($node) {
+            $node.addClass('flip');
+          }, 50, $node);
+        });
+      }
+    });
+/* --------------- COUNTER BANNER PART END --------------- */
+  });
+
+
+$(document).ready(function() {
+
+/* --------------- TEAM SLIDER --------------- */
+    $("#slider-team").owlCarousel({
+        items : 4,
+        slideSpeed : 2000,
+        nav: true,
+        autoplay: false,
+        dots: false,
+        loop: true,
+        responsiveRefreshRate : 200,
+        navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items:1,
+            },
+            // breakpoint from 480 up
+            480 : {
+                items:1,
+            },
+            // breakpoint from 768 up
+            768 : {
+                items:3,
+            },
+            1000:{
+                items:3,
+            },
+            1024:{
+                items:4,
+            }
+        }
+    });
+/* --------------- TEAM SLIDER END --------------- */
+
+
+/* --------------- ADVISOR SLIDER --------------- */
+    $("#slider-advisor").owlCarousel({
+        items : 4,
+        slideSpeed : 2000,
+        nav: true,
+        autoplay: false,
+        dots: false,
+        loop: true,
+        responsiveRefreshRate : 200,
+        navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items:1,
+            },
+            // breakpoint from 480 up
+            480 : {
+                items:1,
+            },
+            // breakpoint from 768 up
+            768 : {
+                items:3,
+            },
+            1000:{
+                items:3,
+            },
+            1024:{
+                items:4,
+            }
+        }
+    });
+/* --------------- ADVISOR SLIDER END --------------- */
+
+/* --------------- ROADMAP SLIDER --------------- */
+    $("#slider-roadmap").owlCarousel({
+        items : 4,
+        slideSpeed : 2000,
+        nav: true,
+        autoplay: false,
+        dots: false,
+        loop: true,
+        responsiveRefreshRate : 200,
+        navText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items:1,
+            },
+            // breakpoint from 480 up
+            480 : {
+                items:1,
+            },
+            // breakpoint from 768 up
+            768 : {
+                items:3,
+            },
+            1000:{
+                items:3,
+            },
+            1024:{
+                items:4,
+            }
+        }
+    });
+/* --------------- ROADMAP SLIDER END --------------- */
+});
+</script>
+    </body>
+</html>

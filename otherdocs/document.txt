@@ -1,0 +1,12 @@
+Google recaptcha details
+Site key : 6Lfo8F0UAAAAAPGNcQTSynFlkKLWckhiomCw69I4
+Secret key : 6Lfo8F0UAAAAAJgWMIh5TZYWRh0BgRmTP25F3EFa
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<div class="g-recaptcha" data-sitekey="6Lfo8F0UAAAAAPGNcQTSynFlkKLWckhiomCw69I4"></div>
+
+
+Server side
+URL: https://www.google.com/recaptcha/api/siteverify
+
